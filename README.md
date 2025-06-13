@@ -1,57 +1,55 @@
 Product Catalog Application
-This project is a React-based web application for dynamic display and management of product data. It focuses on core frontend skills, including mocked API integration, React Hook-based state management, and a responsive user interface.
+This React-based web application provides a dynamic and interactive interface for managing product data. It showcases key frontend development skills through its features, mock API integration, and user-centric design.
 
-Live Demo
-View the deployed application here:
+Live Demo ✨
+Explore the deployed application here:
 https://jocular-kataifi-382491.netlify.app/
 
-Features ✨
-Product Listing: Displays product details including Image, Title, Brand, Category, Price, Rating, Return Policy, and MOQ.
+Key Features 🚀
+Product Display: View a comprehensive list of products with essential details.
 
-Inline Editing: Edit product titles and MOQ values directly within the table, with client-side validation and simulated API updates. ✏️
+Inline Editing: Easily modify product titles and Minimum Order Quantities (MOQ) directly in the table. ✏️
 
 Dynamic Filtering:
 
-Search by title or brand. 🔍
+Search products by title or brand using the search bar. 🔍
 
-Dropdown filters for Brand, Category, Price, and Rating, with options dynamically updated based on current results.
+Filter by specific brands, categories, prices, or ratings using intelligent dropdowns that adapt to available data.
 
-Reset Filters button to clear all criteria. 🔄
+One-click "Reset Filters" button to clear all active filters. 🔄
 
-Column Visibility: Toggle visibility for specific table columns. 👀
+Customizable View: Toggle the visibility of different table columns to personalize your view. 👀
 
-Sorting: Sort columns (Price, Rating, MOQ) in ascending or descending order. ↕️
+Data Sorting: Sort products by price, rating, or MOQ in ascending or descending order. ↕️
 
-Product Management: Delete existing products and add new ones via a form. 🗑️➕
+Product Management: Add new products to the list and delete existing ones. ➕🗑️
 
-Pagination: Navigate through product listings efficiently. 📄
+Pagination: Navigate through large datasets with efficient page controls. 📄
 
-User Feedback: Includes clear loading states, error handling for API calls, and a "No results found" message.
-
-Reset Filters Button: A dedicated button to clear all active filters and search queries.
+User Feedback: Clear visual indicators for loading states and error messages, plus a "No results found" message when filters yield no data.
 
 Technologies Used 💻
-React.js: Frontend library for UI.
+React.js: Primary library for building the user interface.
 
-React Hooks: For state and side effects (useState, useEffect).
+React Hooks: Utilized for efficient state management (useState, useEffect).
 
-Vite: Frontend build tool.
+Vite: Fast and lightweight development server and build tool.
 
-JavaScript (ES6+): Application logic.
+JavaScript (ES6+): Core programming language for application logic.
 
-CSS (Inline Styles): Styling applied directly within React components.
+CSS (Inline Styles): All styling implemented directly within React components.
 
-HTML5: Page structure.
+HTML5: Structured content for web pages.
 
-Setup Instructions 🚀
-To run this project locally:
+Setup Instructions 🛠️
+To get a local copy of this project up and running, follow these steps:
 
 Clone the Repository:
 
 git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name # Replace 'your-repo-name'
+cd your-repo-name # Navigate into your project directory
 
-(Remember to replace your-username/your-repo-name.git with your actual GitHub repository URL)
+(Remember to replace your-username/your-repo-name.git with your actual GitHub repository URL.)
 
 Install Dependencies:
 
@@ -65,18 +63,18 @@ npm run dev
 # OR
 yarn dev
 
-The application typically opens at http://localhost:5173/.
+The application should then open in your browser, typically at http://localhost:5173/.
 
 Mock API (productService.js) 📡
-The project uses a mock API service (src/api/productService.js) to simulate data operations:
+This project uses an in-memory mock API to simulate backend interactions. The src/api/productService.js file:
 
 Fetches initial product data from https://dummyjson.com/products.
 
-Stores data in-memory.
+Manages subsequent data operations (updates, deletions) in memory.
 
-Implements CRUD operations (getAllProducts, updateProductTitle, updateProductMOQ, deleteProduct) using Promises and setTimeout to mimic asynchronous network requests.
+Simulates network delays using setTimeout for a more realistic user experience.
 
-Note: Data changes are not persistent across browser refreshes.
+Note: As this is a mock API, any changes made are not persistent and will reset upon page refresh.
 
 Project Structure 📁
 .
@@ -84,11 +82,12 @@ Project Structure 📁
 ├── src/
 │   ├── api/                # Mock API service (productService.js)
 │   ├── components/
-│   │   └── ProductTable.jsx # Main UI and logic component
-│   ├── App.jsx             # Main application component
-│   ├── main.jsx            # React entry point
-│   └── index.css           # Global CSS styles
-├── .gitignore              # Files ignored by Git
-├── package.json            # Dependencies and scripts
-├── vite.config.js          # Vite configuration
-└── README.md               # This file
+│   │   └── ProductTable.jsx # Main table UI and logic
+│   ├── App.jsx             # Root application component
+│   ├── main.jsx            # React application entry point
+│   └── index.css           # Global styles
+├── .gitignore              # Files/folders to be ignored by Git
+├── package.json            # Project dependencies and scripts
+├── vite.config.js          # Vite build tool configuration
+└── README.md               # This documentation file
+
